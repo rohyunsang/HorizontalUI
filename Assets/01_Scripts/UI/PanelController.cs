@@ -17,7 +17,39 @@ public class PanelController : MonoBehaviour
 
     private void Awake()
     {
+        Init();
+        TabButtonsAddListenr();
+    }
+    
+    private void Init()
+    {
         SetPanelWidth();
+        ShowMainPanel();
+    }
+
+    private void SetPanelWidth()
+    {
+        tabWidth = canvasRect.rect.width;
+        // Debug.Log(tabWidth);
+        
+        foreach(RectTransform panel in panels)
+        {
+            Vector2 size = panel.sizeDelta;
+            size.x = tabWidth;
+            panel.sizeDelta = size;
+            Debug.Log(panel.rect.width);
+        }
+    }
+
+    private void ShowMainPanel()
+    {
+        Vector2 newPosition = content.anchoredPosition;
+        newPosition.x = -2 * tabWidth;
+        content.anchoredPosition = newPosition;
+    }
+
+    private void TabButtonsAddListenr()
+    {
         int buttonCount = tabButtons.Count;
         for (int i = 0; i < buttonCount; i++)
         {
@@ -33,17 +65,4 @@ public class PanelController : MonoBehaviour
         content.anchoredPosition = newPosition;
     }
 
-    private void SetPanelWidth()
-    {
-        tabWidth = canvasRect.rect.width;
-        Debug.Log(tabWidth);
-        
-        foreach(RectTransform panel in panels)
-        {
-            Vector2 size = panel.sizeDelta;
-            size.x = tabWidth;
-            panel.sizeDelta = size;
-            Debug.Log(panel.rect.width);
-        }
-    }
 }
