@@ -2,6 +2,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum PanelType
+{
+    ShopPanel = 0,
+    EquipmentPanel,
+    MainPanel,
+    CollectionPanel,
+    BattlePanel
+}
+
 
 [ExecuteInEditMode]
 public class PanelController : MonoBehaviour
@@ -14,6 +23,7 @@ public class PanelController : MonoBehaviour
 
     private float tabWidth = 1080f; // 1080 x 1920 Default 
 
+    public PanelType panelType;  // Set Start Panel in editor 
 
     private void Awake()
     {
@@ -24,8 +34,10 @@ public class PanelController : MonoBehaviour
     private void Init()
     {
         SetPanelWidth();
-        ShowMainPanel();
+        ShowSelectedPanel();
     }
+
+
 
     private void SetPanelWidth()
     {
@@ -41,10 +53,10 @@ public class PanelController : MonoBehaviour
         }
     }
 
-    private void ShowMainPanel()
+    private void ShowSelectedPanel()
     {
         Vector2 newPosition = content.anchoredPosition;
-        newPosition.x = -2 * tabWidth;
+        newPosition.x = -((int)panelType) * tabWidth;
         content.anchoredPosition = newPosition;
     }
 
@@ -66,3 +78,4 @@ public class PanelController : MonoBehaviour
     }
 
 }
+
