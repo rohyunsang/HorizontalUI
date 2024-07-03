@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 887.2037, y: 1770}
+  m_SizeDelta: {x: 886.1539, y: 1770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &169359082
 MonoBehaviour:
@@ -394,7 +394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -3544.6155, y: 0}
   m_SizeDelta: {x: 0, y: 1770}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &325067199
@@ -472,7 +472,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 887.2037, y: 1770}
+  m_SizeDelta: {x: 886.1539, y: 1770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358993167
 MonoBehaviour:
@@ -774,7 +774,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 887.2037, y: 1770}
+  m_SizeDelta: {x: 886.1539, y: 1770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451846401
 MonoBehaviour:
@@ -1089,7 +1089,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 887.2037, y: 1770}
+  m_SizeDelta: {x: 886.1539, y: 1770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761277565
 MonoBehaviour:
@@ -1188,6 +1188,7 @@ MonoBehaviour:
   scrollbar: {fileID: 282440185}
   content: {fileID: 325067198}
   canvasRect: {fileID: 1145748639}
+  panelType: 4
 --- !u!1 &903720714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1346,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 887.2037, y: 1770}
+  m_SizeDelta: {x: 886.1539, y: 1770}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &969549872
 MonoBehaviour:
@@ -1830,7 +1831,7 @@ GameObject:
   - component: {fileID: 1318017553}
   - component: {fileID: 1318017552}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RatioCheckImageRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2049,7 +2050,7 @@ GameObject:
   - component: {fileID: 1597900505}
   - component: {fileID: 1597900504}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RatioCheckImageLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
